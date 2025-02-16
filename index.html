@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Banking App</h1>
+        <div class="balance">
+            <h2>Account Balance: $<span id="balance">1000</span></h2>
+        </div>
+        <div class="transactions">
+            <h3>Deposit</h3>
+            <input type="number" id="depositAmount" placeholder="Enter amount to deposit">
+            <button onclick="deposit()">Deposit</button>
+        </div>
+        <div class="transactions">
+            <h3>Withdraw</h3>
+            <input type="number" id="withdrawAmount" placeholder="Enter amount to withdraw">
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
